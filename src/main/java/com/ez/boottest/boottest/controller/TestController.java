@@ -21,9 +21,9 @@ public class TestController {
         return "hello";
     }
 
-//    @RequestMapping("/")
-//    public String getView(Model model) {
-//        model.addAttribute("msg", "Hello there, This message has been injected from the controller method");
-//        return "hello";
-//    }
+    @RequestMapping("/info")
+    public String getStartPage(Model model) {
+        model.addAttribute("msg", "Hello there, This message has been injected from the controller method");
+        return "hello";
+    }
 }
