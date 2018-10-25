@@ -3,6 +3,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html lang="en">
 <body>
-<h2>234523542354</h2>
+<img id="image"  src="<c:url value="/resources/img/SafeLocation.png" />" width="200" />
 </body>
 </html>

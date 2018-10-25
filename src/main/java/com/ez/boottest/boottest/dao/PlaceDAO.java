@@ -9,6 +9,9 @@ import javax.persistence.EntityManager;
 import javax.persistence.Transient;
 import javax.transaction.Transactional;
 
+import java.sql.Timestamp;
+import java.util.Date;
+
 @Repository
 @Transactional
 public class PlaceDAO  {
@@ -27,6 +30,7 @@ public class PlaceDAO  {
     public void addNew(String s){
         Place p = new Place();
         p.setName(s);
+        p.setDateCreate(new Timestamp(new Date().getTime()));
         placeRepository.save(p);
     }
 
